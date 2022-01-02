@@ -2,7 +2,10 @@
 #include<vector>
 using namespace std;
 int main(){
-    vector<int>v;
+    vector<int>v;  //initialization of a vector
+    //vector<int>v(5);              initializes vector of 5 elements all of value 0 by default .
+    //vector<int>v(5,1);            intializes vector of 5 elements all of value 1 .
+    //vector<int>v(5)={1,2,3,4,5};  intializes vector of 5 with values 1,2,3,4,5 .
     v.push_back(1);
     v.push_back(2);
     v.push_back(3);
