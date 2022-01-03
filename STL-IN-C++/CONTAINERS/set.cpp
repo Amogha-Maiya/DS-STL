@@ -1,5 +1,6 @@
 #include<iostream>
 #include<set>
+#include<algorithm>
 using namespace std;
 int main(){
     set<int>s;
@@ -19,11 +20,11 @@ int main(){
     cout<<"ELEMENTS AFTER ERASE FUNCTION : "<<endl;
     for(auto j:s)
     cout<<j<<endl;
-
-    set<int>::iterator itr=s.find(9);
-    cout<<"reference iterator  : "<<*itr<<endl;
-
-
-    
-
+    auto itr=s.find(11);
+    cout<<"iterator  : "<<*itr<<endl;
+    auto itr1=s.lower_bound(3);
+    auto itr2=s.upper_bound(4);
+    cout<<"lower bound of 3 : "<<*itr1<<endl;
+    cout<<"upper bound of 4 : "<<*itr2<<endl;
+    return 0;
 }
