@@ -5,7 +5,7 @@ int linear_search(int arr[],int n,int x)
     int count=0;
     for(int i=0;i<n;i++)
         if(arr[i]==x){
-            cout<<"element found at"<<i<<endl;
+            cout<<"element found at : "<<i<<endl;
             count ++;
         }
         return count;
@@ -21,6 +21,6 @@ int main(){
         cin>>arr[i];
     }
     int result=linear_search(arr,n,x);
-    cout<<result<<endl;
+    cout<<" Number of Count : "<<result<<endl;
     return 0; 
 }
