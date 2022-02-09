@@ -1,29 +1,28 @@
+//SELECTION SORT ALGORITHM....
 #include<iostream>
 #include<bits/stdc++.h>
 using namespace std;
-void selection_sort(int arr[],int n){
-    int min_index;
-    for(int i=0;i<n-1;i++){
-    min_index=i;
-    for(int j=i;j<n;j++){
-        if(arr[min_index]>arr[j])
-            min_index=j;
+void selection_sort(int a[],int n){
+    for(int i=1;i<n;i++){
+        int j=i-1;
+        int temp=a[i];
+        while(j>=0 && a[j]>temp){
+            a[j+1]=a[j];
+            j--;
+        }
+        a[j+1]=temp;
     }
-    swap(arr[i],arr[min_index]);
-    }
-    for(int i=0;i<n;i++)
-    cout<<arr[i]<<endl;
 }
 int main(){
-    int arr[10],n;
-    cout<<"Enter n : "<<endl;
+    int n,a[10];
+    cout<<"Enter number n : "<<endl;
     cin>>n;
-    cout<<"Enter elements"<<endl;
-    for(int i=0;i<n;i++){
-        cin>>arr[i];
-    }
-    cout<<"Sorted Array is : "<<endl;
-    selection_sort(arr,n);
+    cout<<"Enter number of elements : "<<endl;
+    for(int i=0;i<n;i++)
+    cin>>a[i];
+    selection_sort(a,n);
+    cout<<"Sorted array : "<<endl;
+    for(int i=0;i<n;i++)
+    cout<<a[i]<<" ";
     return 0;
-
 }

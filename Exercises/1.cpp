@@ -1,8 +1,14 @@
-/* IN SORTED ARRAY FIND THE FIRST AND THE LAST OCCURENCE OF THE GIVEN NUMBER */
-/* THE ARRAY CAN HAVE DUPLICATE ELEMENTS AS WELL,IF NOT FOUND RETURN -1*/
+/* IN SORTED ARRAY FIND THE FIRST AND THE LAST OCCURENCE or left most and right most occurence
+ OF THE GIVEN NUMBER */
+ 
+//input : 1 2 2 3 3 3 4 4 4 4 . Find left and right most occurence of key = 3 .
+
+//output : left most occurence : 3rd index 
+//         right most occurence : 5th index
+
 #include<bits/stdc++.h>
 using namespace std;
-int first_occurence(int arr[],int key,int low,int high){
+int left_most_occurence(int arr[],int key,int low,int high){
     int result=-1;
     int mid=low+(high-low)/2;
     while(low<=high){
@@ -17,7 +23,7 @@ int first_occurence(int arr[],int key,int low,int high){
     }
     return result;
 }
-int last_occurence(int arr[],int key,int low,int high){
+int right_most_occurence(int arr[],int key,int low,int high){
     int result=-1;
     int mid=low+(high-low)/2;
     while(low<=high){
@@ -40,8 +46,8 @@ int main(){
     cin>>arr[i];
     cout<<"Enter key"<<endl;
     cin>>key;
-    int index_first=first_occurence(arr,key,0,9);
-    int index_last=last_occurence(arr,key,0,9);
+    int index_first=left_most_occurence(arr,key,0,9);
+    int index_last=right_most_occurence(arr,key,0,9);
     cout<<"First occurence is at index : "<<index_first<<endl;
     cout<<"Last occurence is at index : "<<index_last<<endl;
     if(index_first!=-1 && index_last!=-1){

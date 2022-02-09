@@ -1,5 +1,12 @@
 //FIND PIVOT IN AN ARRAY
-//PIVOT IN THIS CASE IS THE SMALLEST ELEMENT IN AN ARRAY WITH RESPECT TO (LOGN) TIME..
+/*what is PIVOT ???
+PIVOT refers to smallest value in a graph!!!*/
+
+//WE NEED TO FIND SMALLEST ELEMENT IN A SORTED-ROTATED ARRAY i.e PIVOT OF ARRAY!!
+//eg : - SORTED ARRAY :- 1 2 3 4 5 
+//       SORTED-ROTATED ARRAY :- 4 5 1 2 3
+// pivot in this case is 1 
+//find solution in log n time complexity.....
 #include<bits/stdc++.h>
 int get_pivot(int a[],int n)
 {

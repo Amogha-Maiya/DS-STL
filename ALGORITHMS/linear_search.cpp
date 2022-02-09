@@ -1,3 +1,4 @@
+//LINEAR SEARCH ALGORITHM.....
 #include<iostream>
 using namespace std;
 int linear_search(int arr[],int n,int x)

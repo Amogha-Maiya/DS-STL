@@ -1,3 +1,4 @@
+//BINARY SEARCH ALGORITHM.....
 #include<iostream>
 using namespace std;
 int binary_search(int a[], int low, int high, int x)    

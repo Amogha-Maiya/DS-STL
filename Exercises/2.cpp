@@ -1,7 +1,6 @@
 //GIVEN AN ARRAY HAVE A MOUNTAIN LIKE STRUCTURE THAT IS TILL INCREASING TILL i (which is maximum of mountain)
-//then decreasing till the end..
-//find i which is the peak of the mountain using binary search
-//eg:- 1,2,4,8,10(i),9,8,7,6,5 -->find i in this case
+//then decreasing till the end......FIND PEAK INDEX IN A MOUNTAIN ARRAY
+//eg:- 1 2 3 4 5 6 5 4 3 2 1
 #include<bits/stdc++.h>
 int find_peak(int a[],int n)
 {
@@ -16,7 +15,7 @@ int find_peak(int a[],int n)
     }
     mid=low+(high-low)/2;
 }  
-return low; 
+return low;
 }
 using namespace std;
 int main(){
@@ -28,7 +27,5 @@ int main(){
     cin>>a[i];
     int peak=find_peak(a,n);
     cout<<"PEAK is at : "<<peak+1<<endl;
-
-
     return 0;
 }

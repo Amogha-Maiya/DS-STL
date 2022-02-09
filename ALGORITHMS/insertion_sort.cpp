@@ -13,8 +13,6 @@ void selection_sort(int arr[],int n){
             }
             arr[j+1]=key;
     } 
-    for(int i=0;i<n;i++)
-    cout<<arr[i]<<endl;
 }
 int main(){
     int arr[10],n;
@@ -26,6 +24,8 @@ int main(){
     }
     cout<<"Sorted Array is : "<<endl;
     selection_sort(arr,n);
+    for(int i=0;i<n;i++)
+    cout<<arr[i]<<endl;
     return 0;
 
 }
