@@ -1,3 +1,4 @@
+//REVERSE THE GIVEN ARRAY 
 #include<bits/stdc++.h>
 using namespace std;
 void reverse(int arr[],int n){

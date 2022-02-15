@@ -1,4 +1,4 @@
-//given an index as input .....after that particular index reverse all the array elements
+//REVERSE ARRAY AFTER A PARTICULAR INDEX GIVEN BY USER!!!
 //eg:- 1 2 3 4 5 as input......given m=2(2nd index)
 //output :- 1 2 3 5 4
 #include<bits/stdc++.h>

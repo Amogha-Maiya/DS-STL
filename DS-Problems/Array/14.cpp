@@ -1,27 +1,16 @@
-//MERGE TWO ARRAYS FROM ARRAY1 AND ARRAY2
+//MERGE TWO SORTED ARRAYS
+//MERGE TWO SORTED or UNSORTED ARRAYS CAN BE DONE USING THIS SIMPLE TRICK!!!
 #include<bits/stdc++.h>
 using namespace std;
 void merge(int arr1[],int m,int arr2[],int n){
-    int i=0;
-    int j=0;
-    int k=0;
-    int res[40];
-    while(i<m){
-        res[k]=arr1[i];
-        i++;
-        k++;
-    }
-    while(j<n){
-        res[k]=arr2[j];
-        j++;
-        k++;
-    }
-    sort(res,res+n+m);
+    for(int i=0;i<n;i++)
+        arr1[i+m]=arr2[i];
+    sort(arr1,arr1+n+m);
     for(int i=0;i<n+m;i++)
-    cout<<res[i]<<" ";
+    cout<<arr1[i]<<" ";
 }
 int main(){
-    int arr1[20],n,m,arr2[20];
+    int arr1[40],n,m,arr2[20];
     cout<<"Enter m :"<<endl;
     cin>>m;
     cout<<"Enter array elements : "<<endl;
@@ -34,4 +23,4 @@ int main(){
     cin>>arr2[j];
     merge(arr1,m,arr2,n);
     return 0;
-    }
+}
