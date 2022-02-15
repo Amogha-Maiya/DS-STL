@@ -1,4 +1,5 @@
 //MERGE TWO ARRAYS FROM ARRAY1 AND ARRAY2
+//easier method is in next program.....
 #include<bits/stdc++.h>
 using namespace std;
 void merge(int arr1[],int m,int arr2[],int n){
