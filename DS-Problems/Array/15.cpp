@@ -13,7 +13,7 @@ int main(){
     cin>>k;
     int temp[n];
     for(int i=0;i<n;i++){
-        temp[(i-k)%n]=a[i];
+        temp[(i+k)%n]=a[i];
     }
     cout<<"ROTATED ARRAY : "<<endl;
     for(int i=0;i<n;i++)
